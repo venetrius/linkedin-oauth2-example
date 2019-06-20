@@ -1,5 +1,5 @@
 {
-  "name": "passport-linkedin-oauth2",
+  "name": "research-linkdin-oauth",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,7 +11,9 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "dotenv": "^8.0.0",
-    "express": "^4.17.0"
+    "express": "^4.17.0",
+    "passport": "^0.4.0",
+    "passport-linkedin-oauth2": "^2.0.0"
   },
   "devDependencies": {
     "morgan": "^1.9.1"
