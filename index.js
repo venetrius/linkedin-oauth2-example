@@ -8,6 +8,7 @@ require('dotenv').config();
 
 
 app.use(express.static("public"));
+app.use(passport.initialize());
 
 var LinkedInStrategy = require('passport-linkedin-oauth2').Strategy;
 
