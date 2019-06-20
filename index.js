@@ -14,7 +14,7 @@ var LinkedInStrategy = require('passport-linkedin-oauth2').Strategy;
 passport.use(new LinkedInStrategy({
   clientID: process.env.LINKEDIN_KEY,
   clientSecret: process.env.LINKEDIN_SECRET,
-  callbackURL: "http://127.0.0.1:3000/auth/linkedin/callback",
+  callbackURL: process.env.CALLBACK_URL,
   scope: ['r_emailaddress', 'r_liteprofile'],
 }, function(accessToken, refreshToken, profile, done) {
   // asynchronous verification, for effect...
